@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="javascript.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="library">
+            <h2>My Library</h2>
+            <table id="library">
+                <tr id="header">
+                    <th id="delete">Remove book</th>
+                    <th id="title">Title</th>
+                    <th id="author">Author</th>
+                    <th id="pages"># Pages</th>
+                    <th id="status">Status</th>
+                </tr>
+            </table>
+        </div>
+        <div class="add-book">
+            <button id="btn">Add New Book</button><br><br>
+            <form class="book-form">
+                <label for="Title">Title:</label><br>
+                <input type="text" id="ftitle" name="ftitle" placeholder="The Lord of the Rings" required><br><br>
+                <label for="author">Author:</label><br>
+                <input type="text" id="fauthor" name="fauthor" placeholder="JRR Tolkien" required><br></br>
+                <label for="pages">Number of pages:</label><br>
+                <input type="number" id="fpages" placeholder="1000" pattern="^[0-9]+$" name="cost" required><br></br>
+                <label for="pages">Status:</label><br>
+                <input type="radio" id="read" name="radio" value="read" required>
+                <label for="read">Read</label><br>
+                <input type="radio" id="not-read" name="radio" value="not-read">
+                <label for="not-read">Not Read</label><br>
+                    <input type="submit" id="submit" value="Submit">
+                    <input type="submit" value="ignore" formnovalidate>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
