@@ -12,35 +12,47 @@
 
 <body>
     <div class="container">
-        <div class="library">
-            <h2>My Library</h2>
-            <table id="library">
-                <tr id="header">
-                    <th id="delete">Remove book</th>
-                    <th id="title">Title</th>
-                    <th id="author">Author</th>
-                    <th id="pages"># Pages</th>
-                    <th id="status">Status</th>
-                </tr>
-            </table>
-        </div>
         <div class="add-book">
-            <button id="btn">Add New Book</button><br><br>
+            <h2>ADD A NEW BOOK:</h2>
             <form class="book-form">
-                <label for="Title">Title:</label><br>
-                <input type="text" id="ftitle" name="ftitle" placeholder="The Lord of the Rings" required><br><br>
-                <label for="author">Author:</label><br>
-                <input type="text" id="fauthor" name="fauthor" placeholder="JRR Tolkien" required><br></br>
-                <label for="pages">Number of pages:</label><br>
-                <input type="number" id="fpages" placeholder="1000" pattern="^[0-9]+$" name="cost" required><br></br>
-                <label for="pages">Status:</label><br>
-                <input type="radio" id="read" name="radio" value="read" required>
-                <label for="read">Read</label><br>
-                <input type="radio" id="not-read" name="radio" value="not-read">
-                <label for="not-read">Not Read</label><br>
-                    <input type="submit" id="submit" value="Submit">
-                    <input type="submit" value="ignore" formnovalidate>
+                <div>
+                    <label for="Title">Title:</label><br>
+                    <input type="text" id="ftitle" name="ftitle" placeholder="The Lord of the Rings" required><br><br>
+                </div>
+                <div>
+                    <label for="author">Author:</label><br>
+                    <input type="text" id="fauthor" name="fauthor" placeholder="JRR Tolkien" required><br></br>
+                </div>
+                <div>
+                    <label for="pages">Number of pages:</label><br>
+                    <input type="number" id="fpages" placeholder="1000" pattern="^[0-9]+$" name="cost"
+                        required><br></br>
+                </div>
+                <div>
+                    <label for="pages">Status:</label><br>
+                    <input type="radio" id="read" name="radio" value="read" required>
+                    <label for="read">Read</label><br>
+                    <input  type="radio" id="not-read" name="radio" value="not-read">
+                    <label for="not-read">Not Read</label><br>
+                </div>
+                <input type="submit" id="submit" value="Submit">
             </form>
+        </div>
+        <div class="library">
+            <div class="title">
+                <h1>MY LIBRARY</h1>
+            </div>
+            <div>
+                <table id="library">
+                    <tr id="header">
+                        <th id="delete">Remove book</th>
+                        <th id="title">Title</th>
+                        <th id="author">Author</th>
+                        <th id="pages"># Pages</th>
+                        <th id="status">Status</th>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 </body>
